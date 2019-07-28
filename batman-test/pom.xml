@@ -7,10 +7,19 @@
         <artifactId>batman</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>batman-api</artifactId>
+    <artifactId>batman-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>batman-api</name>
-    <description>api for batman</description>
+    <name>batman-test</name>
+    <description>test for batman</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
 
 </project>

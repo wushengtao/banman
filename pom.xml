@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>1.5.13.RELEASE</version>
     </parent>
     <groupId>com.lunzi</groupId>
     <artifactId>batman</artifactId>
@@ -16,12 +16,34 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <mybatis-plus-boot-starter.version>2.3</mybatis-plus-boot-starter.version>
+        <mybatis-plus-generator.version>2.3</mybatis-plus-generator.version>
+        <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
+        <druid-spring-boot-starter.version>1.1.5</druid-spring-boot-starter.version>
+        <velocity.version>1.7</velocity.version>
+        <lombok.version>1.16.18</lombok.version>
+        <velocity-engine-core.version>2.0</velocity-engine-core.version>
+        <start-class>com.lunzi.batman.BatmanWebApplication</start-class>
     </properties>
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
     <modules>
         <module>batman-api</module>
         <module>batman-dal</module>
         <module>batman-service</module>
         <module>batman-web</module>
+        <!--<module>batman-test</module>-->
     </modules>
 
 
