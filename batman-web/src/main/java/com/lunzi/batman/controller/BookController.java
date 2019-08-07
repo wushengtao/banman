@@ -1,5 +1,6 @@
 package com.lunzi.batman.controller;
 
+import com.lunzi.batman.common.BizException;
 import com.lunzi.batman.core.service.BookService;
 import com.lunzi.batman.dal.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,6 @@ public class BookController {
     @RequestMapping("/test")
     @ResponseBody
     public String hello(){
-        return "hello";
+        throw new BizException("业务异常");
     }
 }
