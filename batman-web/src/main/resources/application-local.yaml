@@ -9,6 +9,9 @@ spring:
      username: root
      password: 123456
      driver-class-name: com.mysql.jdbc.Driver
+     druid:
+      initial-size: 5
+      max-active: 20
 
 #mybatis
 mybatis-plus:

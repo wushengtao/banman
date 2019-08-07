@@ -7,22 +7,16 @@
         <artifactId>batman</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>batman-service</artifactId>
+    <artifactId>batman-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>batman-service</name>
-    <description>service for batman</description>
+    <name>batman-common</name>
+    <description>common for batman</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.lunzi</groupId>
-            <artifactId>batman-dal</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.lunzi</groupId>
-            <artifactId>batman-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>${spring-boot-starter-swagger.version}</version>
         </dependency>
 
         <dependency>
@@ -32,9 +26,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>${rocketmq.version}</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
